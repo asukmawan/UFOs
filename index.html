@@ -65,11 +65,21 @@
                                 <!-- type="text" means that the code will look for text to be input. -->
                                 <!-- id="datetime" is what our JavaScript code will look for when the button is clicked and the function is executed -->
                             </li>
-                            <!-- list item for the button -->
                             <li class="list-group-item bg-dark">
-                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
-                                <!-- type="button" tells the browser that, by default, the button does nothing. However, our custom JavaScript script will overwrite the default behavior—as if the button is waiting for instruction. -->
-                                <!-- The class="btn btn-default" attribute adds some Bootstrap styling to the mix to help keep the element neat and tidy -->
+                                <label for="city">Enter a City</label>
+                                <input type="text" placeholder="benton" id="city" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="state">Enter a State </label>
+                                <input type="text" Placeholder="ar"id="state" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="country">Enter a Country</label>
+                                <input type="text" Placeholder="us"id="country" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="shape">Enter a Shape</label>
+                                <input type="text" Placeholder="circle "id="shape" />
                             </li>
                         </ul>
                     </form>
