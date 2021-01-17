@@ -14,18 +14,18 @@
     <!-- link our stylesheet 'style.css' -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <!-- The wrapper class adds a bit of extra functionality to Bootstrap. It helps group the elements (e.g., title, paragraph, table, and filters) and specifies the styling in our stylesheet. -->
     <div class="wrapper">
         <!-- Build the Navbar - Navigation Bar -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- To reset the webpage - we are adding a link which links the navbar to the homepage - no other sections are added  -->
             <!-- “navbar-brand” is a built-in style from Bootstrap that provides padding and font sizing to the element by default. -->
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         <!-- Add the Jumbotron -->
         <div class="jumbotron">
-            <h1>The Truth Is Out There</h1>
+            <h1 class="display-4">The Truth Is Out There</h1>
         </div>
         <!-- Add Article Title and Paragraph -->
         <div class="container-fluid">
@@ -53,21 +53,21 @@
             <div class="row">
                 <!-- Create a Filter Form -->
                 <div class="col-md-3">
-                    <form>
+                    <form class="bg-dark">
                         <p>Filter Search</p>
                         <!-- start with an unordered list and give this a class of "list-group." Using this specific class lets Bootstrap apply predetermined styling to the list.  -->
-                        <ul class="list-group">
+                        <ul class="list-group bg-dark">
                             <!-- list item for the input -->
                             <!-- add two new HTML components here: label and input. The label will be used as a prompt to encourage users to input a date. The input field is where users will complete the input. -->
-                            <li class="list-group-item">
+                            <li class="list-group-item bg-dark">
                                 <label for="date">Enter Date</label>
                                 <input type="text" placeholder="1/10/2010" id="datetime" />
                                 <!-- type="text" means that the code will look for text to be input. -->
                                 <!-- id="datetime" is what our JavaScript code will look for when the button is clicked and the function is executed -->
                             </li>
                             <!-- list item for the button -->
-                            <li class="list-group-item">
-                                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                            <li class="list-group-item bg-dark">
+                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
                                 <!-- type="button" tells the browser that, by default, the button does nothing. However, our custom JavaScript script will overwrite the default behavior—as if the button is waiting for instruction. -->
                                 <!-- The class="btn btn-default" attribute adds some Bootstrap styling to the mix to help keep the element neat and tidy -->
                             </li>
